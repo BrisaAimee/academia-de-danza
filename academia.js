@@ -60,7 +60,7 @@ class Profesor extends Persona {
     }
 
     presentarse() {
-        return `Hola, soy ${this.getNombreCompleto()} y enseño ${this.clase}`;
+        return `${this.getNombreCompleto()} enseña${this.clase}`;
     }
 }
 

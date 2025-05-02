@@ -251,17 +251,17 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 2rem; /* espacio entre form e imagen */
+  gap: 2rem; 
   padding: 1rem;
   }
 
   #form-foto img {
     width: 100%;
-    max-width: 500px; /* LIMITA el tamaño máximo de la imagen */
+    max-width: 500px;
     height: auto;
     display: block;
     border-radius: 8px;
-    object-fit: cover; /* para que mantenga proporciones sin deformarse */
+    object-fit: cover; 
   }
 
   form {
@@ -362,19 +362,16 @@
     background-color: #ff77ba;
   }
 
-
-  @media (max-width: 1400px) {
-
-    body {
+  body {
         padding-left: 5%;
         padding-right: 5%;
     }
 
-    h1 {
+  h1 {
       font-size: 1.5rem;
     }
     
-    nav {
+  nav {
         margin-left: 70%;
     }
 
@@ -382,23 +379,123 @@
       align-items: center;
     }
   
-    nav ul a {
+  nav ul a {
         padding: 25px;
 
     }
 
-    .quienes-somos h2 {
+  .quienes-somos h2 {
         font-size: xx-large;
     }
 
-    .quienes-somos p {
+  .quienes-somos p {
       font-size: 0.9rem;
       padding: 15px;
     }
 
-    .nuestro-estudio h2 {
+  .nuestro-estudio h2 {
         font-size: xx-large;
         letter-spacing: 1px;
     }
+
+  @media (max-width: 600px) {
+      body {
+        padding: 1rem;
+      }
+
+      h1 {
+        padding-top: 40px
+      }
+    
+      nav {
+        width: 100%;
+        margin-left: 0;
+        border-radius: 10px;
+      }
+    
+      nav ul {
+        flex-wrap: nowrap;
+        gap: 0.5rem;
+      }
+    
+      nav ul a {
+        padding: 0.7rem;
+        font-size: 1rem;
+      }
+    
+      .quienes-somos h2,
+      .nuestro-estudio h2 {
+        font-size: 1.4rem;
+        padding: 0.5rem;
+      }
+    
+      .quienes-somos p,
+      .nuestro-estudio p {
+        font-size: 0.9rem;
+        padding: 1rem;
+      }
+    
+      .grilla-profes {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+        gap: 1rem;
+      }
+    
+      #form-foto {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0;
+      }
+    
+      form {
+        width: 100%;
+        max-width: 500px;
+      }
+    
+      form input,
+      form select,
+      form button {
+        width: 100%;
+        margin-right: 0;
+        box-sizing: border-box;
+      }
+
+      #tipo, #clase, #nombre, #apellido, #edad, #genero {
+        width: 210px;
+      }
+    
+      #form-foto img {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+      }
+    
+      #tipo {
+        padding-right: 0;
+      }
+
+      .tabla-horarios th,
+      .tabla-horarios td {
+        padding: 0.6rem;
+        font-size: 0.85rem;
+      }
+
+      .tabla-horarios {
+        padding: 0;
+      }
+    
+      h1 {
+        font-size: 1.2rem;
+      }
+    
+      .filtros-nivel {
+        padding-left: 0;
+        text-align: center;
+      }
+    
+      .filtros-nivel button {
+        width: 100%;
+        margin-bottom: 0.5rem;
+      }
   }
-  
