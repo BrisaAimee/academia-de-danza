@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Estudiantes - Academia de Danza</title>
+  <link rel="stylesheet" href="../css/home.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html" id="inicio">Inicio</a></li>
+        <li><a href="grilla.html" id="grilla">Grilla</a></li>
+        <li><a href="clases.html" id="clases">Clases</a></li>
+        <li><a href="formularios.html" id="formularios">Inscripción</a></li>
+      </ul>
+    </nav>
+    <h1>Academia de Danza</h1>
+  </header>
+  <main>
+    <section>
+      <div id="form-foto">
+        <form id="form">
+            <label for="tipo">Tipo:</label>
+            <select id="tipo" name="tipo">
+              <option value="estudiante">Estudiante</option>
+              <option value="profesor">Profesor</option>
+            </select>
+
+            <label for="clase">Clase:</label>
+            <select id="clase" name="clase">
+              <option value="K-pop">K-pop</option>
+              <option value="Urbano">Urbano</option>
+              <option value="Clásico">Clásico</option>
+              <option value="Femme">Femme</option>
+            </select>
+          
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+          
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
+          
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" required>
+          
+            <label for="genero">Género:</label>
+            <select id="genero" name="genero">
+              <option value="Femenino">Femenino</option>
+              <option value="Masculino">Masculino</option>
+              <option value="Otro">Otro</option>
+            </select>
+          
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required>
+          
+            <button type="submit">Agregar</button>
+          </form>
+          <img src="../media/foto.jpg" alt="Foto danza">
+      </div>
+
+          <ul id="lista-personas"></ul>
+       
+      <h3>Estudiantes</h3>
+      <ul id="lista-estudiantes"></ul>
+      
+      <h3>Profesores</h3>
+      <ul id="lista-profesores"></ul>
+      
+    </section>
+  </main>
+
+  <script src="../academia.js"></script>
+</body>
+</html>
